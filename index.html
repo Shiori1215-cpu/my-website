@@ -1,11 +1,367 @@
 <!DOCTYPE html>
+
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8">
-    <title>CSSで文字を赤くしてみよう</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <p>この文字の色が変わります。</p>
-  </body>
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>coffee no mori</title>
+
+
+
+<script>
+
+(function(d) {
+
+var config = {
+
+kitId: 'cwc7xmp',
+
+scriptTimeout: 3000,
+
+async: true
+
+},
+
+h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+
+})(document);
+
+</script>
+
+
+
+<!-- Josefin Sans 読み込み -->
+
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+
+
+<!-- head内に追加 -->
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+
+
+
+
+
+<link rel="stylesheet" href="style.css">
+
+
+
+<style>
+
+#dropdown {
+
+display: none;
+
+width: 150px;
+
+padding: 0;
+
+margin: 0;
+
+list-style: none;
+
+position: absolute;
+
+background: white;
+
+top: 60px; 
+
+right: calc(50% - 500px); 
+
+}
+
+
+
+#dropdown.open {
+
+display: block;
+
+}
+
+#dropdown li a {
+
+display: block;
+
+padding: 10px;
+
+text-decoration: none;
+
+color: #333;
+
+}
+
+
+
+[lang="en"] {
+
+font-family: 'Josefin Sans', sans-serif;
+
+}
+
+</style>
+
+</head>
+
+
+
+
+
+<body>
+
+<header>
+
+<div class="headerBg">
+
+<div class="headerWrap">
+
+<div class="logo">
+
+<img src="images/logo.jpg" alt="ロゴ">
+
+</div>
+
+<div class="menuWrap">
+
+<div class="hamburger">☰</div>
+
+<nav class="nav-menu">
+
+<ul>
+
+<li><a href="index.html coffee.html">Coffee menu</a></li>
+
+<li><a href="index.html food .html">Food menu</a></li>
+
+<li><a href="index.html sweets.html">Sweets menu</a></li>
+
+<li><a href="#access">Access</a></li>
+
+<li><a href="#news">News</a></li>
+
+</ul>
+
+</nav>
+
+</div>
+
+</div>
+
+</div>
+
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="hero-image">
+
+<div class="hero-image-box">
+
+<img src="images/forestmori3.jpg" alt="森の画像" class="hero-img fade-in">
+
+<div class="innnerWrap">
+
+<p class="overlay-text delay">
+
+森に帰ったような安らぎを ー。
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section class="main-image">
+
+<!-- 写真 -->
+
+<div class="photo-area fade-in-img2">
+
+<img src="images/latte.jpg" alt="カフェラテ">
+
+</div>
+
+
+
+<!-- 写真の上に帯＋文字 -->
+
+<div class="color-layer fade-in-text2">
+
+<div class="content-box">
+
+<p class="overlay-text2">
+
+coffee<br>no<br>mori
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section class="normal-section always-visible">
+
+<section class="menu" id="menu">
+
+<h2>Menu</h2>
+
+多彩な香り、深い味。<br>
+
+coffee no moriでは、エスプレッソからスペシャルティまで、<br>
+
+豊富なラインナップであなたのコーヒー時間を彩ります。<br>
+
+静かな森のような空間で、束の間のひとときを。
+
+</p>
+
+
+
+<div class="innnerWrap">
+
+<div class="menu-links">
+
+<img src="images/coffee.jpg" alt="コーヒー" class="image-left">
+
+<p class="right-line"><a href="index.html coffee.html">Coffee　&gt;&gt;</span></a></p>
+
+</div>
+
+</div>
+
+
+
+<div class="innnerWrap">
+
+<div class="menu-links2">
+
+<img src="images/pasta.jpg" alt="フード" class="image-right">
+
+<p class="right-line left-align "><a href="index.html food .html">Food　&gt;&gt;</p></a>
+
+</div>
+
+
+
+<div class="innnerWrap">
+
+<div class="menu-links3">
+
+<img src="images/sweets.jpg" alt="スイーツ" class="image-left2">
+
+<p class="right-line"><a href="index.html sweets.html">Sweets　&gt;&gt;</p></a>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+<section class="access" id="access">
+
+<h2>Access</h2>
+
+<img src="images/map.png" alt="地図">
+
+<p>
+
+清澄白川駅　都営大江戸線<span class="ffTsukuji">A1</span>出口より徒歩<span class="num">5</span>分<br>
+
+清澄白川駅　地下鉄東西線門前仲町駅<span class="num">6</span>出口より徒歩<span class="num">7</span>分
+
+</p>
+
+
+
+</section>
+
+
+
+<section class="news" id="news">
+
+<h2>News</h2>
+
+<div class="information">
+
+<p class="info"><a href="#"><span class="num">00.00.00</span>　　お知らせが入ります。</a></p><br>
+
+</div>
+
+<p class="past-info"><a href="#">過去のお知らせ一覧 ＞</a>
+
+</section>
+
+
+
+<footer>
+
+<div class="headerWrap">
+
+<img src="images/logo.jpg" alt="ロゴ" class="logo" style="width: 120px; height: 100px; object-fit:cover;">
+
+<nav>
+
+<ul>
+
+<li><a href="#menu">Menu</a></li>
+
+<li><a href="#access">Access</a></li>
+
+<li><a href="#news">News</a></li>
+
+</ul>
+
+</nav>
+
+</div>
+
+</footer>
+
+
+
+
+
+<script src="script.js"></script>
+
+<script src="english-font.js"></script>
+
+<script src="animetion.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+</section>
+
+</body>
+
 </html>
